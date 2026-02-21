@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: syncopate;
+  src: url(/Syncopate-Regular.ttf);
+}
+
+.syncopate {
+  font-family: syncopate;
+}
+
+@font-face {
+  font-family: syncopate-bold;
+  src: url(/Syncopate-Bold.ttf);
+}
+
+.syncopate-bold {
+  font-family: syncopate-bold;
+}
