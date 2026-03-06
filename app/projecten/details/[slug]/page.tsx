@@ -1,6 +1,5 @@
 import projectsData from "@/data/projectsData";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
@@ -13,48 +12,41 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
 
   if (!project) notFound();
 
-  const allImages = project.extraImages;
+  const heroImage = project.extraImages[0];
+
+  const galleryImages = project.extraImages.slice(1);
 
   return (
     <div className="bg-[#E7EBEF] min-h-screen font-sans antialiased">
-      <main className="relative">
-        {allImages.map((img, index) => (
-          <section key={index} className="h-screen w-full sticky top-0 overflow-hidden scroll-smooth" style={{ zIndex: index + 1 }}>
-            <Image src={img} alt={`${project.title} ${index}`} fill className="object-cover" priority={index === 0} />
+      <main className="relative flex flex-col w-full">
+        <section className="relative h-screen w-full overflow-hidden">
+          <Image src={heroImage} alt={`${project.title} hero`} fill className="object-cover" priority />
 
-            <div className="absolute inset-0 bg-blue-500/20 z-10" />
+          <div className="absolute inset-0 bg-white/20 z-10 pointer-events-none" />
+          <div className="absolute top-0 left-0 w-full h-32 bg-linear-to-b from-black/40 to-transparent opacity-50 z-20 pointer-events-none" />
 
-            {index === 0 && (
-              <div className="absolute inset-0 flex items-center justify-center z-20">
-                <div className="w-[90%] max-w-5xl text-white px-6 transform translate-y-10">
-                  <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter drop-shadow-2xl">{project.title}</h1>
-                  <div className="flex items-center gap-6 text-sm font-bold uppercase tracking-[0.3em] mb-8">
-                    <span>{project.category}</span>
-                    <span className="w-1.5 h-1.5 bg-white rounded-full" />
-                    <span>Atelier Synaeve</span>
-                  </div>
-                  <p className="text-lg md:text-xl max-w-xl opacity-90 leading-relaxed drop-shadow-lg">{project.description}</p>
-                </div>
+          <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
+            <div className="w-[90%] max-w-5xl text-white px-6 transform translate-y-10 pointer-events-auto backdrop-blur-xs p-4 rounded-2xl">
+              <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter drop-shadow-2xl text-[#f4f5f7]">{project.title}</h1>
+              <div className="flex items-center gap-6 text-sm font-bold uppercase tracking-[0.3em] mb-8">
+                <span>{project.category}</span>
+                <span className="w-1.5 h-1.5 bg-white rounded-full" />
+                <span>Atelier Synaeve</span>
               </div>
-            )}
-
-            <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/40 to-transparent opacity-50 z-30" />
-          </section>
-        ))}
-
-        {/* 3. FOOTER */}
-        {/*
-          <section className="relative h-[60vh] bg-[#1A2A5E] flex flex-col items-center justify-center text-white text-center px-6" style={{ zIndex: allImages.length + 1 }}>
-          <h3 className="text-4xl md:text-6xl font-black uppercase mb-8 tracking-tighter">Interesse in een project?</h3>
-          <Link
-            href="/contact"
-            className="group relative border-2 border-white px-12 py-5 rounded-full font-black uppercase tracking-widest overflow-hidden transition-all duration-500 hover:text-[#1A2A5E]"
-          >
-            <span className="relative z-10">Neem Contact Op</span>
-            <div className="absolute inset-0 bg-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
-          </Link>
+              <p className="text-lg md:text-xl max-w-xl opacity-90 leading-relaxed drop-shadow-lg text-[#f4f5f7]">{project.description}</p>
+            </div>
+          </div>
         </section>
-        */}
+
+        <section className="w-full bg-white">
+          <div className="max-w-400 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:gap-12 md:p-12">
+            {galleryImages.map((img, index) => (
+              <div key={index} className="relative w-full h-[50vh] md:h-[90vh] overflow-hidden">
+                <Image src={img} alt={`${project.title} galerij ${index + 1}`} fill className="object-cover hover:scale-105 transition-transform duration-700 ease-in-out" />
+              </div>
+            ))}
+          </div>
+        </section>
       </main>
     </div>
   );

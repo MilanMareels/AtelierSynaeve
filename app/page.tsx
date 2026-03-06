@@ -8,7 +8,7 @@ export default function Home() {
         <Image src="/Logo/logo.webp" alt="Atelier Synaeve Aquarel Achtergrond" fill className="object-cover scale-150 md:scale-200 transform transition-transform duration-500" priority />
       </div>
 
-      <main className="flex-grow flex flex-col justify-center items-center text-center z-10 px-4 md:px-6 relative w-full">
+      <main className="grow flex flex-col justify-center items-center text-center z-10 px-4 md:px-6 relative w-full">
         <div className="flex flex-col w-max max-w-full">
           <h1 className="text-[7.5vw] sm:text-4xl md:text-5xl lg:text-[4.5rem] uppercase mb-2 drop-shadow-md syncopate-bold tracking-tight whitespace-nowrap">Atelier Synaeve</h1>
 

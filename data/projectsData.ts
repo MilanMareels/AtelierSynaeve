@@ -1,23 +1,21 @@
-const projectsData: Record<string, { title: string; category: string; description: string; mainImage: string; extraImages: string[] }> = {
+const projectsData: Record<string, { title: string; category: string; description: string; extraImages: string[] }> = {
   tessera: {
     title: "Tessera",
-    category: "Furniture",
-    description: "Tafel taras",
-    mainImage: "/tessera-1.HEIC",
-    extraImages: ["/tessera-2.jpg", "/tessera-3.HEIC", "/tessera-1.HEIC"],
+    category: "Meubel",
+    description:
+      "Latijns voor een klein stukje mozaïek. Binnen dit ontwerp staat het hergebruik van materialen volledig centraal. Oude terrasbalken en overschotten van travertin tegels, van de heraanleg van een buitentrap, bepaalden het ontwerp.",
+    extraImages: ["/Tessera/Tessera-3-details.webp", "/Tessera/Tessera-2-details.webp", "/Tessera/Tessera-1-details.webp"],
   },
   "textile-usion": {
     title: "Textile Usion",
     category: "Furniture",
     description: "Stoel",
-    mainImage: "/",
     extraImages: ["/", "/", "/"],
   },
   "organisch-hout": {
     title: "Organisch Hout",
     category: "Furniture",
     description: "Tafel binne hout",
-    mainImage: "/",
     extraImages: ["/", "/", "/"],
   },
 };
