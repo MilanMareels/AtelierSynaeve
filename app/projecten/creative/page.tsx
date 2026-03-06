@@ -66,7 +66,7 @@ function PortfolioSection({ title, items }: PortfolioSectionProps) {
   return (
     // Paddings boven en onder iets strakker gezet voor mobiel
     <section className="flex flex-col pt-20 md:pt-32 pb-20 md:pb-32">
-      <div className="w-full mt-15 md:mt-10 mb-6 md:mb-10 z-10 relative text-left md:text-left">{title}</div>
+      <div className="w-full mt-15 md:mt-10 mb-6 md:mb-10 z-10 relative text-left md:text-left ">{title}</div>
       <div className="w-full max-w-6xl mx-auto">
         {/* gap-16 verkleind naar gap-8 op mobiel (blijft gap-24 op grote schermen) */}
         <div className="flex flex-col gap-8 md:gap-24 w-full">

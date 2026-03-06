@@ -3,32 +3,37 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#E7EBEF] text-[#2D3142] font-sans px-6 md:px-12 relative overflow-hidden">
-      {/* --- ACHTERGROND LOGO --- */}
-      {/* absolute & inset-0 zet deze div over het hele scherm. pointer-events-none zorgt dat het klikken op de links niet blokkeert. */}
-      <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
-        <div className="relative w-[120%] md:w-[70%] h-[90%] max-w-5xl opacity-30 md:opacity-40">
-          <Image src="/Logo/logo.webp" alt="Atelier Synaeve Logo Groot" fill className="object-contain" priority />
-        </div>
+    <div className="flex flex-col min-h-screen bg-[#f4f5f7] text-white font-sans relative overflow-hidden">
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Image src="/Logo/logo.webp" alt="Atelier Synaeve Aquarel Achtergrond" fill className="object-cover scale-150 md:scale-200 transform transition-transform duration-500" priority />
       </div>
 
-      <main className="flex-grow flex flex-col justify-center items-center text-center pt-20 z-10">
-        <h1 className="text-5xl md:text-7xl uppercase text-[#0b407c] drop-shadow-md mb-6 syncopate-bold">Atelier Synaeve</h1>
+      <main className="flex-grow flex flex-col justify-center items-center text-center z-10 px-4 md:px-6 relative w-full">
+        <div className="flex flex-col w-max max-w-full">
+          <h1 className="text-[7.5vw] sm:text-4xl md:text-5xl lg:text-[4.5rem] uppercase mb-2 drop-shadow-md syncopate-bold tracking-tight whitespace-nowrap">Atelier Synaeve</h1>
 
-        <p className="text-lg md:text-xl text-gray-600 italic mb-16 max-w-2xl  p-4 rounded-2xl">Ontdek de wereld van organisch design, grafische vormgeving en creatieve textielprojecten.</p>
+          <div className="flex flex-row justify-between w-full px-1">
+            <Link
+              href="/projecten/furniture"
+              className="sm:text-sm md:text-2xl lg:text-3xl uppercase hover:text-gray-200 hover:scale-105 transition-all duration-300 font-light drop-shadow-sm syncopate tracking-tight"
+            >
+              Meubel
+            </Link>
 
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center px-10 py-6">
-          <Link href="/projecten/furniture" className="text-4xl md:text-4xl font-bold uppercase tracking-wide text-gray-500 hover:text-[#0b407c] hover:scale-110 transition-all duration-300">
-            Furniture
-          </Link>
+            <Link
+              href="/projecten/creative"
+              className="sm:text-sm md:text-2xl lg:text-3xl uppercase hover:text-gray-200 hover:scale-105 transition-all duration-300 font-light drop-shadow-sm syncopate tracking-tight"
+            >
+              Artistiek
+            </Link>
 
-          <Link href="/projecten/creative" className="text-4xl md:text-4xl font-bold uppercase tracking-wide text-gray-500 hover:text-[#0b407c] hover:scale-110 transition-all duration-300">
-            Creative
-          </Link>
-
-          <Link href="/projecten/graphic" className="text-4xl md:text-4xl font-bold uppercase tracking-wide text-gray-500 hover:text-[#0b407c] hover:scale-110 transition-all duration-300">
-            Graphic
-          </Link>
+            <Link
+              href="/projecten/graphic"
+              className="sm:text-sm md:text-2xl lg:text-3xl uppercase hover:text-gray-200 hover:scale-105 transition-all duration-300 font-light drop-shadow-sm syncopate tracking-tight"
+            >
+              Grafisch
+            </Link>
+          </div>
         </div>
       </main>
     </div>

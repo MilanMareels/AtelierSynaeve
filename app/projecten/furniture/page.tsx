@@ -71,7 +71,7 @@ export default function FurniturePage() {
   return (
     <div className="flex flex-col min-h-screen bg-[#E7EBEF] text-[#2D3142] font-sans px-6 md:px-12 overflow-x-hidden">
       <main className="flex-grow">
-        <PortfolioSection title={<h2 className="text-[#0b407c] text-4xl font-black uppercase tracking-wider drop-shadow-md text-left md:text-left">Furniture</h2>} items={furnitureProjects} />
+        <PortfolioSection title={<h2 className="text-[#0b407c] text-4xl font-black uppercase drop-shadow-md text-left md:text-left">Furniture</h2>} items={furnitureProjects} />
       </main>
     </div>
   );
@@ -88,7 +88,7 @@ function PortfolioSection({ title, items }: PortfolioSectionProps) {
   return (
     // Padding top en bottom iets verkleind voor mobiel
     <section className="flex flex-col pt-20 md:pt-32 pb-20 md:pb-32">
-      <div className="w-full mt-15 md:mt-10 mb-8 md:mb-16 z-10 relative">{title}</div>
+      <div className="w-full mt-15 md:mt-10 mb-8 md:mb-16 z-10 relative syncopate-bold tracking-tight">{title}</div>
       <div className="w-full max-w-6xl mx-auto">
         {/* gap-10 is verkleind naar gap-8 op mobiel, blijft gap-16 op desktop */}
         <div className="flex flex-col gap-8 md:gap-16 w-full">
