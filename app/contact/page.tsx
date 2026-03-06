@@ -55,17 +55,13 @@ export default function Contact() {
 
   return (
     <section id="contact" className="min-h-screen flex flex-col justify-center items-center py-20 px-6 md:px-12">
-      {/* We maken de container breder (max-w-6xl) voor de twee kolommen */}
       <div className="w-full max-w-6xl flex flex-col mt-10 md:mt-0">
-        {/* Titel */}
         <div className="text-center mb-16 lg:mb-24">
           <h2 className="text-3xl md:text-5xl uppercase tracking-[0.15em] text-[#3B458B] mb-4 syncopate drop-shadow-sm text-left">Contact</h2>
           <p className="text-sm md:text-base text-gray-400 uppercase tracking-widest font-light text-left">Laten we samenwerken</p>
         </div>
 
-        {/* --- GRID MET 2 KOLOMMEN --- */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
-          {/* KOLOM 1: BEDRIJFSINFO (Links) */}
           <div className="flex flex-col space-y-8 font-light tracking-widest uppercase text-sm md:text-base justify-center">
             <div>
               <p className="font-bold syncopate mb-1 tracking-normal text-[#3B458B]">Atelier Synaeve</p>
@@ -99,13 +95,11 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* KOLOM 2: FORMULIER (Rechts) */}
           <form onSubmit={onSubmit} className="w-full space-y-10">
             <input type="hidden" name="subject" value="Nieuw bericht via de website" />
             <input type="hidden" name="from_name" value={companyName} />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {/* Veld: Naam */}
               <div className="relative">
                 <input
                   type="text"
@@ -117,7 +111,6 @@ export default function Contact() {
                 />
               </div>
 
-              {/* Veld: Email */}
               <div className="relative">
                 <input
                   type="email"
@@ -130,7 +123,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Veld: Telefoon (NIEUW - Neemt volledige breedte in) */}
             <div className="relative">
               <input
                 type="tel"
@@ -141,7 +133,6 @@ export default function Contact() {
               />
             </div>
 
-            {/* Veld: Bericht */}
             <div className="relative">
               <textarea
                 id="message"
@@ -153,8 +144,7 @@ export default function Contact() {
               ></textarea>
             </div>
 
-            {/* Submit Knop */}
-            <div className="flex justify-start lg:justify-end pt-4">
+            <div className="flex justify-start lg:justify-end pt-4 syncopate">
               <button
                 type="submit"
                 disabled={loading}
