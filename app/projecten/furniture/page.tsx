@@ -20,13 +20,13 @@ export default function FurniturePage() {
 
     <div key="2" className="relative w-full h-80 md:h-200 mt-4 md:mt-10">
       <Link
-        href="/projecten/details/textile-usion-3"
+        href="/projecten/details/textile-usion"
         className="absolute top-[0%] md:top-[-10%] left-[5%] md:left-[15%] w-[40%] md:w-[35%] h-25 md:h-62.5 block hover:scale-105 transition-transform duration-500 z-10"
       >
         <Image src="/Textile-usion/Textile-usion-3.webp" alt="Textile usion 3" fill className="object-contain" loading="lazy" />
       </Link>
       <Link
-        href="/projecten/details/textile-usion-2"
+        href="/projecten/details/textile-usion"
         className="absolute top-[15%] right-[0%] md:right-[5%] w-[55%] md:w-[45%] h-45 md:h-112.5 block hover:scale-105 transition-transform duration-500 z-20"
       >
         <Image src="/Textile-usion/Textile-usion-2.webp" alt="Textile usion 2" fill className="object-contain" loading="lazy" />
@@ -40,16 +40,16 @@ export default function FurniturePage() {
     </div>,
 
     <div key="3" className="flex w-full justify-between items-end h-30 md:h-87.5 px-4 md:px-20 mt-4 md:mt-10">
-      <Link href="/projecten/details/organisch-hout" className="relative w-[65%] md:w-[65%] h-full block hover:scale-105 transition-transform duration-500">
+      <Link href="/projecten/details/vinicunca" className="relative w-[65%] md:w-[65%] h-full block hover:scale-105 transition-transform duration-500">
         <Image src="/Organisch-hout/Organisch-hout-1.webp" alt="Organisch hout" fill className="object-contain" loading="lazy" />
       </Link>
-      <Link href="/projecten/organisch-hout-2" className="relative md:ml-20 w-[55%] md:w-[55%] h-[80%] md:h-[90%] block hover:scale-105 transition-transform duration-500 mb-4 rotate-90">
+      <Link href="/projecten/details/vinicunca" className="relative md:ml-20 w-[55%] md:w-[55%] h-[80%] md:h-[90%] block hover:scale-105 transition-transform duration-500 mb-4 rotate-90">
         <Image src="/Organisch-hout/Organisch-hout-2.webp" alt="Organisch hout 2" fill className="object-contain" loading="lazy" />
       </Link>
     </div>,
 
     <div key="4" className="w-full flex justify-center mt-8 md:mt-20">
-      <Link href="/projecten/details/organisch-hout-3" className="relative w-screen max-w-300 h-55 md:h-200 block hover:scale-105 transition-transform duration-500">
+      <Link href="/projecten/details/vinicunca" className="relative w-screen max-w-300 h-55 md:h-200 block hover:scale-105 transition-transform duration-500">
         <Image src="/Organisch-hout/Organisch-hout-3.webp" alt="Organisch hout 3" fill className="object-contain md:object-cover" loading="lazy" />
       </Link>
     </div>,

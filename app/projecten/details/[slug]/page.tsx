@@ -16,22 +16,22 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
   const galleryImages = project.extraImages.slice(1);
 
   return (
-    <div className="bg-[#E7EBEF] min-h-screen font-sans antialiased">
+    <div className="min-h-screen font-sans antialiased bg-[#f4f5f7]">
       <main className="relative flex flex-col w-full">
         <section className="relative h-screen w-full overflow-hidden">
           <Image src={heroImage} alt={`${project.title} hero`} fill className="object-cover" priority />
 
-          <div className="absolute inset-0 bg-[#c45F3f]/30 z-10 pointer-events-none" />
+          <div className="absolute inset-0 bg-white/30 z-10 pointer-events-none" />
 
           <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
             <div className="w-[90%] max-w-5xl text-white px-6 transform translate-y-10 pointer-events-auto">
-              <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter drop-shadow-2xl text-white">{project.title}</h1>
+              <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter drop-shadow-2xl text-[#0b407c] syncopate-bold uppercase">{project.title}</h1>
               <div className="flex items-center gap-6 text-sm font-bold uppercase tracking-[0.3em] mb-8 drop-shadow-md">
-                <span>{project.category}</span>
-                <span className="w-1.5 h-1.5 bg-white rounded-full" />
-                <span>Atelier Synaeve</span>
+                <span className="text-[#0b407c]">{project.category}</span>
+                <span className="w-1.5 h-1.5 bg-[#0b407c] rounded-full" />
+                <span className="text-[#0b407c]">Atelier Synaeve</span>
               </div>
-              <p className="text-lg md:text-2xl max-w-5xl leading-relaxed drop-shadow-xl text-white/95">{project.description}</p>
+              <p className="text-lg md:text-2xl max-w-5xl leading-relaxed drop-shadow-xl text-gray-600 font-semibold">{project.description}</p>
             </div>
           </div>
         </section>
