@@ -24,15 +24,20 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
           <div className="absolute inset-0 bg-white/30 z-10 pointer-events-none" />
 
           <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
-            <div className="w-[90%] max-w-5xl text-white px-6 transform translate-y-10 pointer-events-auto">
-              <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter drop-shadow-2xl text-[#0b407c] syncopate-bold uppercase">{project.title}</h1>
-              <div className="flex items-center gap-6 text-sm font-bold uppercase tracking-[0.3em] mb-8 drop-shadow-md">
+            <div className="w-[90%] max-w-5xl px-6 transform translate-y-10 pointer-events-auto">
+              <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter drop-shadow-2xl text-[#0b407c] syncopate-bold uppercase text-center">{project.title}</h1>
+              <div className="flex justify-center items-center gap-6 text-sm font-bold uppercase tracking-[0.3em] drop-shadow-md">
                 <span className="text-[#0b407c]">{project.category}</span>
                 <span className="w-1.5 h-1.5 bg-[#0b407c] rounded-full" />
                 <span className="text-[#0b407c]">Atelier Synaeve</span>
               </div>
-              <p className="text-lg md:text-2xl max-w-5xl leading-relaxed drop-shadow-xl text-gray-600 font-semibold">{project.description}</p>
             </div>
+          </div>
+        </section>
+
+        <section className="w-full bg-white py-16 md:py-32 flex justify-center">
+          <div className="w-[90%] max-w-5xl px-6">
+            <p className="text-lg md:text-2xl leading-relaxed text-[#0b407c] tracking-wide">{project.description}</p>
           </div>
         </section>
 
