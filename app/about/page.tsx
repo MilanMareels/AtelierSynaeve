@@ -1,13 +1,11 @@
 const About = () => {
   return (
     <section className="px-8 md:px-24 lg:px-48 pt-40 md:pt-48 font-sans bg-white">
-      {/* Titels in de stijl van 'CONTACT' en 'LATEN WE SAMENWERKEN' */}
       <div className="mb-16">
         <h1 className="text-4xl md:text-5xl font-light tracking-[0.25em] text-[#3B3B6D] uppercase mb-4">About</h1>
         <h2 className="text-xs md:text-sm font-light tracking-widest text-[#A0A0B0] uppercase">Michèle Synaeve</h2>
       </div>
 
-      {/* Tekstblok met ruime line-height voor een cleane look */}
       <div className="max-w-2xl space-y-6 text-[#8B8B99] leading-relaxed font-light text-sm md:text-base">
         <p>
           Ik ben <strong className="font-normal text-[#3B3B6D]">Michèle Synaeve</strong>, masterstudent Interieurarchitectuur aan KU Leuven (campus Gent).
