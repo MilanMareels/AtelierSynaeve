@@ -18,6 +18,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
   return (
     <div className="min-h-screen font-sans antialiased bg-[#f4f5f7]">
       <main className="relative flex flex-col w-full">
+        {/* Hero Sectie */}
         <section className="relative h-screen w-full overflow-hidden">
           <Image src={heroImage} alt={`${project.title} hero`} fill className="object-cover" priority />
 
@@ -37,10 +38,17 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
 
         <section className="w-full bg-white py-16 md:py-32 flex justify-center">
           <div className="w-[90%] max-w-5xl px-6">
-            <p className="text-lg md:text-2xl leading-relaxed text-[#0b407c] tracking-wide">{project.description}</p>
+            <div className="text-lg md:text-2xl leading-relaxed text-[#0b407c] tracking-wide space-y-6">
+              {project.description.split("\n").map((paragraph, index) => {
+                if (paragraph.trim() === "") return null;
+
+                return <p key={index}>{paragraph}</p>;
+              })}
+            </div>
           </div>
         </section>
 
+        {/* Galerij Sectie */}
         <section className="w-full bg-white">
           <div className="max-w-400 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:gap-12 md:p-12">
             {galleryImages.map((img, index) => (
