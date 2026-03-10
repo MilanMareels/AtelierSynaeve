@@ -16,23 +16,26 @@ export default function CookieBanner() {
 
   const handleAccept = () => {
     document.cookie = "cookieConsent=true; path=/; max-age=604800; SameSite=Lax";
-
     setIsVisible(false);
   };
 
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-white z-50 p-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] border-t border-gray-100">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-gray-700 text-sm md:text-base text-center md:text-left">
+    <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full z-9999">
+      <div className="bg-white/95 backdrop-blur-sm shadow-2xl border border-gray-200 p-4 md:px-10 md:py-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p className="text-[#8B8B99] font-light text-sm md:text-base text-center md:text-left leading-relaxed">
           Wij gebruiken cookies om uw ervaring te verbeteren.{" "}
-          <Link href="/privacy" className="underline text-blue-600 hover:text-blue-800">
-            Meer informatie.
+          <Link href="/privacy" className="text-[#3B458B] underline hover:opacity-70 transition-opacity">
+            Meer informatie
           </Link>
+          .
         </p>
 
-        <button onClick={handleAccept} className="bg-gray-900 text-white px-6 py-2 rounded-md font-medium text-sm hover:bg-gray-700 transition">
+        <button
+          onClick={handleAccept}
+          className="border border-gray-800 text-gray-800 uppercase tracking-[0.15em] py-3 px-8 text-xs md:text-sm transition-all duration-300 hover:bg-gray-800 hover:text-[#f4f5f7] whitespace-nowrap syncopate"
+        >
           Accepteren
         </button>
       </div>
