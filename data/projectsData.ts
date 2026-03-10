@@ -15,7 +15,7 @@ Binnen dit ontwerp staat het hergebruik van materialen volledig centraal. Oude t
 Het ontwerp is geïnspireerd op een oude kotvloer, een glas-in-lood raam en moulures. Organische vormen uit een glas-in-lood raam zijn omgevormd en gestapeld tot tafelpoten. De lagen van de poten weerspiegelen de lijnen uit moulures. Als een knipoog naar de oude kotvloer zijn de multiplex-poten gebrand.
 
 De positionering van de poten is definitief vastgelegd met behulp van een plaat gemaakt van epoxyhars, die als het ware het legplan vormt voor de poten. De tafel kan worden beschouwd als een functioneel meubelstuk, waarbij de compositie van de tafelpoten gelezen kan worden als een wandeling door een berglandschap.`,
-    extraImages: ["/Organisch-hout/Vinicunca-3-details.webp", "/Organisch-hout/Vinicunca-2-details.webp", "/Organisch-hout/Vinicunca-1-details.webp"],
+    extraImages: ["/Organisch-hout/vinicunca-3-details.webp", "/Organisch-hout/vinicunca-2-details.webp", "/Organisch-hout/vinicunca-1-details.webp"],
   },
   "textile-usion": {
     title: "Textile-usion",
@@ -35,7 +35,7 @@ Het antwoord? Stoelen gemaakt uit verhard stof, zonder enige andere structuur te
 Het ontwerp biedt een mogelijk antwoord op een onderzoek naar tafelrituelen en bioplastics. Waar het 16de-eeuwse tafelen draait om machtsuitstraling van de gastheer, draait het hedendaags tafelritueel rond het gezelschap.
 
 De collectieve handelingen aan tafel zullen extra gestimuleerd worden. Dit door een positionering van tafelgerei die vastligt in een landschap van bioplastic. Het landschap is een schaalmodel van het natuurreservaat De Wolfsputte in Dilbeek.`,
-    extraImages: ["/Deseri/Collectief-landschap-3-details.webp", "/Deseri/Collectief-landschap-2-details.webp", "/Deseri/Collectief-landschap-1-details.webp"],
+    extraImages: ["/Deseri/Collectief-Landschap-3-details.webp", "/Deseri/Collectief-Landschap-2-details.webp", "/Deseri/Collectief-Landschap-1-details.webp"],
   },
   "sutured-nature": {
     title: "Sutured nature",

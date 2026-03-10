@@ -36,10 +36,10 @@ export default function CreativePage() {
         href="/projecten/details/sutured-nature"
         className="absolute bottom-4 md:bottom-10 left-4 md:left-24 w-[30%] md:w-[20%] h-40 md:h-96 z-10 block hover:scale-105 transition-transform duration-500 justify-center"
       >
-        <Image src="/Sutured-nature/Sutured-Nature-1.webp" alt="Sutured nature project" fill className="object-contain" loading="lazy" />
+        <Image src="/Sutured-nature/Sutured-nature-1.webp" alt="Sutured nature project" fill className="object-contain" loading="lazy" />
       </Link>
       <Link href="/projecten/details/sutured-nature" className="absolute bottom-0 right-4 md:right-20 w-[60%] md:w-[45%] h-56 md:h-125 z-20 block hover:scale-105 transition-transform duration-500">
-        <Image src="/Sutured-nature/Sutured-Nature-3.webp" alt="Sutured nature 3 project" fill className="object-contain" loading="lazy" />
+        <Image src="/Sutured-nature/Sutured-nature-3.webp" alt="Sutured nature 3 project" fill className="object-contain" loading="lazy" />
       </Link>
     </div>,
   ];
