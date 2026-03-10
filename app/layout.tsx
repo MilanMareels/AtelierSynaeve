@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
   title: {
     // Rapport tip: Maak de titel specifieker voor je diensten
-    default: `Web Development & Cloud Services | ${companyName}`,
+    default: `Michele | ${companyName}`,
     template: `%s | ${companyName}`,
   },
 
