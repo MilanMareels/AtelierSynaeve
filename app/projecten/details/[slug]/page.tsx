@@ -27,9 +27,9 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
           <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
             <div className="w-[90%] max-w-5xl px-6 transform translate-y-10 pointer-events-auto">
               <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter drop-shadow-2xl text-[#0b407c] syncopate-bold uppercase text-center">{project.title}</h1>
-              <div className="flex justify-center items-center gap-6 text-sm font-bold uppercase tracking-[0.3em] drop-shadow-md">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6 text-xs md:text-sm font-bold uppercase tracking-[0.3em] drop-shadow-md text-center">
                 <span className="text-[#0b407c]">{project.category}</span>
-                <span className="w-1.5 h-1.5 bg-[#0b407c] rounded-full" />
+                <span className="hidden md:block w-1.5 h-1.5 bg-[#0b407c] rounded-full shrink-0" />
                 <span className="text-[#0b407c]">Atelier Synaeve</span>
               </div>
             </div>

@@ -32,7 +32,6 @@ export default function Contact() {
           icon: "success",
           confirmButtonColor: "#374151",
         });
-        event.target.reset();
       } else {
         Swal.fire({
           title: "Fout!",
@@ -54,8 +53,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex flex-col justify-center items-center py-20 px-6 md:px-12">
-      <div className="w-full max-w-6xl flex flex-col mt-10 md:mt-0">
+    <section id="contact" className="min-h-screen flex flex-col justify-center items-center py-20 px-6 md:px-12 bg-[#E7EBEF]">
+      <div className="w-full max-w-6xl flex flex-col mt-20 md:mt-0">
         <div className="text-center mb-16 lg:mb-24">
           <h2 className="text-3xl md:text-5xl uppercase tracking-[0.15em] text-[#3B458B] mb-4 syncopate drop-shadow-sm text-left">Contact</h2>
           <p className="text-sm md:text-base text-gray-400 uppercase tracking-widest font-light text-left">Laten we samenwerken</p>
