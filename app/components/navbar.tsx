@@ -36,8 +36,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* HIER GEWIJZIGD: z-50 is nu z-[70] geworden */}
-      <nav className="absolute top-0 left-0 w-full z-[70] flex justify-between items-center px-6 md:px-12 py-8 bg-transparent pointer-events-none">
+      <nav className="absolute top-0 left-0 w-full z-70 flex justify-between items-center px-6 md:px-12 py-8 bg-transparent pointer-events-none">
         {pathname !== "/" ? (
           <Link href="/" className="pointer-events-auto" onClick={() => setIsOpen(false)}>
             <Image src="/Logo/logo.webp" alt="Atelier Synaeve Logo" width={90} height={90} className="object-contain" priority />
@@ -53,9 +52,8 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* HIER GEWIJZIGD: z-40 is nu z-[60] geworden */}
       <div
-        className={`fixed inset-0 bg-[#3B458B] backdrop-blur-sm z-[60] flex flex-col justify-center items-center overflow-y-auto transition-all duration-500 ease-in-out ${
+        className={`fixed inset-0 bg-[#3B458B] backdrop-blur-sm z-60 flex flex-col justify-center items-center overflow-y-auto transition-all duration-500 ease-in-out ${
           isOpen ? "opacity-100 pointer-events-auto visible" : "opacity-0 pointer-events-none invisible"
         }`}
       >

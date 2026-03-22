@@ -8,57 +8,57 @@ import StructuredData from "./components/structuredData";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const baseUrl = "https://www.jouwdomein.be";
+const baseUrl = "https://www.ateliersynaeve.be";
 const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME!;
 
 export const metadata: Metadata = {
-  // Dit lost de 'Canonical URL' errors op door een basis URL in te stellen
   metadataBase: new URL(baseUrl),
 
   title: {
-    // Rapport tip: Maak de titel specifieker voor je diensten
-    default: `Michele | ${companyName}`,
+    default: `Meubelontwerp & Design Dilbeek | ${companyName}`,
     template: `%s | ${companyName}`,
   },
 
-  // Rapport tip: Call-to-action toevoegen
-  description: "Professionele one-page websites en software op maat. Snel, responsief en SEO geoptimaliseerd. Vraag vandaag nog een offerte aan.",
+  description: "Meubelontwerp en grafisch design op maat in Dilbeek. Actief in Brussel, Antwerpen en heel Vlaanderen. Unieke creatieve ontwerpen.",
 
-  keywords: ["website laten maken", "nextjs", "webdesign", "antwerpen", "seo", "bedrijfssoftware"],
+  keywords: [
+    "meubelontwerp",
+    "meubelontwerp Dilbeek",
+    "maatwerk meubels",
+    "interieur design België",
+    "grafisch ontwerp",
+    "grafisch ontwerp Dilbeek",
+    "interieur ontwerper Brussel",
+    "meubels op maat Antwerpen",
+    "design meubels Vlaanderen",
+    "creatieve studio België",
+    "interieur ontwerp Oostende",
+    "meubel designer België",
+  ],
 
-  // OPLOSSING VOOR "Meta Robots ontbreekt"
-  // Dit vertelt Google expliciet: "Ja, indexeer deze pagina"
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
 
-  // OPLOSSING VOOR "Canonical ontbreekt" & "Hreflang"
   alternates: {
-    canonical: "./", // Wijst naar de huidige pagina als origineel
+    canonical: "./",
     languages: {
-      "nl-BE": "/nl", // Geeft aan dat dit de Vlaamse versie is
+      "nl-BE": "/nl",
     },
   },
 
   openGraph: {
-    title: "Web Development & Cloud Services | Jouw Bedrijf",
-    description: "Wij bouwen snelle, vindbare websites. Bekijk onze diensten.",
+    title: `Meubelontwerp & Design Dilbeek`,
+    description: "Meubelontwerp en grafisch design op maat in Dilbeek en Vlaanderen.",
     url: baseUrl,
-    siteName: "Jouw Bedrijf",
+    siteName: companyName,
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Preview van Jouw Bedrijf",
+        alt: "Meubelontwerp en design",
       },
     ],
     locale: "nl_BE",
@@ -67,7 +67,6 @@ export const metadata: Metadata = {
 
   icons: {
     icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
   },
 };
 
