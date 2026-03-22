@@ -10,7 +10,7 @@ export default function Footer() {
         <a href="#" className="hover:underline">
           Instagram
         </a>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col">
           <p className="my-4 md:my-0 text-center">© 2026 Atelier Synaeve.</p>
           <a href="https://www.lannie.be" target="_blank" rel="noreferrer">
             <p className="my-4 md:my-0 text-center">Ontworpen en ontwikkeld door Lannie</p>
@@ -28,7 +28,7 @@ export default function Footer() {
         <a href="#" className="hover:underline">
           Instagram
         </a>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col">
           <p className="my-4 md:my-0 text-center">© 2026 Atelier Synaeve.</p>
           <a href="https://www.lannie.be" target="_blank" rel="noreferrer">
             <p className="my-4 md:my-0 text-center">Ontworpen en ontwikkeld door Lannie</p>
@@ -44,7 +44,7 @@ export default function Footer() {
       <a href="#" className="hover:underline">
         Instagram
       </a>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col">
         <p className="my-4 md:my-0 text-center">© 2026 Atelier Synaeve.</p>
         <a href="https://www.lannie.be" target="_blank" rel="noreferrer">
           <p className="my-4 md:my-0 text-center">Ontworpen en ontwikkeld door Lannie</p>
