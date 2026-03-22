@@ -1,5 +1,6 @@
 import projectsData from "@/data/projectsData";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
@@ -37,7 +38,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
         </section>
 
         <section className="w-full bg-white py-16 md:py-32 flex justify-center">
-          <div className="w-[90%] max-w-5xl px-6">
+          <div className="w-[90%] max-w-6xl px-6">
             <div className="text-lg md:text-2xl leading-relaxed text-[#0b407c] tracking-wide space-y-6">
               {project.description.split("\n").map((paragraph, index) => {
                 if (paragraph.trim() === "") return null;

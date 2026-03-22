@@ -25,7 +25,7 @@ De positionering van de poten is definitief vastgelegd met behulp van een plaat 
 Het ontwerp startte met een onderzoek naar de ornamentale thematiek trompe l’oeil. Een eigen definiëring voor de term luidde: het manipuleren van het oog met als doel verwarring te veroorzaken. Het gebruik van stof vormde de drijfveer achter het ontwerp; hoe kan er van stof een optische illusie worden gemaakt?
 
 Het antwoord? Stoelen gemaakt uit verhard stof, zonder enige andere structuur te voorzien. De stof wordt de structuur van het meubel en niet de bekleding.`,
-    extraImages: ["/Textile-usion/Textile-Usion-3-details.webp", "/Textile-usion/Textile-Usion-2-details.webp", "/Textile-usion/Textile-Usion-1-details.webp"],
+    extraImages: ["/Textile-usion/Textile-Usion-1-details.webp", "/Textile-usion/Textile-Usion-2-details.webp", "/Textile-usion/Textile-Usion-3-details.webp"],
   },
   "collectief-landschap": {
     title: "Collectief Landschap",
