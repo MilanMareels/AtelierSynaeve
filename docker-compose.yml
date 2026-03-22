@@ -1,0 +1,11 @@
+services:
+  nextjs-website:
+    build:
+      context: .
+      args:
+        - NEXT_PUBLIC_COMPANY_NAME=${NEXT_PUBLIC_COMPANY_NAME}
+        - NEXT_PUBLIC_CONTACT_FORM_KEY=${NEXT_PUBLIC_CONTACT_FORM_KEY}
+    container_name: website-atelier-synaeve
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
