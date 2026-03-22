@@ -36,7 +36,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-8 bg-transparent pointer-events-none">
+      <nav className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-8 bg-transparent pointer-events-none">
         {pathname !== "/" ? (
           <Link href="/" className="pointer-events-auto" onClick={() => setIsOpen(false)}>
             <Image src="/Logo/logo.webp" alt="Atelier Synaeve Logo" width={90} height={90} className="object-contain" priority />

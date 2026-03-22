@@ -1,6 +1,6 @@
+import ProjectGallery from "@/app/components/projectGallery";
 import projectsData from "@/data/projectsData";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
@@ -19,7 +19,6 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
   return (
     <div className="min-h-screen font-sans antialiased bg-[#f4f5f7]">
       <main className="relative flex flex-col w-full">
-        {/* Hero Sectie */}
         <section className="relative h-screen w-full overflow-hidden">
           <Image src={heroImage} alt={`${project.title} hero`} fill className="object-cover" priority />
 
@@ -49,16 +48,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
           </div>
         </section>
 
-        {/* Galerij Sectie */}
-        <section className="w-full bg-white">
-          <div className="max-w-400 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:gap-12 md:p-12">
-            {galleryImages.map((img, index) => (
-              <div key={index} className="relative w-full h-[50vh] md:h-[90vh] overflow-hidden">
-                <Image src={img} alt={`${project.title} galerij ${index + 1}`} fill className="object-cover hover:scale-105 transition-transform duration-700 ease-in-out" />
-              </div>
-            ))}
-          </div>
-        </section>
+        <ProjectGallery images={galleryImages} title={project.title} />
       </main>
     </div>
   );
