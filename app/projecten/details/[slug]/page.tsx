@@ -1,3 +1,4 @@
+import BackButton from "@/app/components/backButton";
 import ProjectGallery from "@/app/components/projectGallery";
 import projectsData from "@/data/projectsData";
 import Image from "next/image";
@@ -20,6 +21,8 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
     <div className="min-h-screen font-sans antialiased bg-[#f4f5f7]">
       <main className="relative flex flex-col w-full">
         <section className="relative h-screen w-full overflow-hidden">
+          <BackButton />
+
           <Image src={heroImage} alt={`${project.title} hero`} fill className="object-cover" priority />
 
           <div className="absolute inset-0 bg-white/30 z-10 pointer-events-none" />
