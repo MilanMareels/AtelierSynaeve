@@ -26,12 +26,16 @@ export default function ProjectGallery({ images, title }: ProjectGalleryProps) {
 
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 md:p-12 cursor-zoom-out" onClick={() => setSelectedImage(null)}>
-          <button className="absolute top-4 right-6 text-white text-5xl font-light hover:text-gray-300 transition-colors z-60" onClick={() => setSelectedImage(null)} aria-label="Sluiten">
+          <button
+            className="absolute top-4 right-6 text-white text-5xl font-light hover:text-gray-300 transition-colors z-60 cursor-pointer"
+            onClick={() => setSelectedImage(null)}
+            aria-label="Sluiten"
+          >
             &times;
           </button>
 
           <div className="relative w-full h-full max-w-7xl" onClick={(e) => e.stopPropagation()}>
-            <Image src={selectedImage} alt="Vergrote weergave" fill className="object-contain" priority loading="lazy" />
+            <Image src={selectedImage} alt="Vergrote weergave" fill className="object-contain" priority />
           </div>
         </div>
       )}

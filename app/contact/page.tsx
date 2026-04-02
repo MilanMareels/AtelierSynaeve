@@ -69,7 +69,7 @@ export default function Contact() {
 
             <div>
               <p className="text-[#3B458B] mb-1">E-mail</p>
-              <a href="mailto:info@ateliersynaeve.be" className="text-gray-400 transition-colors">
+              <a href="mailto:atelier.synaeve@gmail.com" className="text-gray-400 transition-colors">
                 atelier.synaeve@gmail.com
               </a>
             </div>

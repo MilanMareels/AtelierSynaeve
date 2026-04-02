@@ -50,8 +50,8 @@ export default function PrivacyPage() {
             </ul>
             <p>
               Neem contact met ons op via{" "}
-              <a href="mailto:info@laarchitecture.be" className="text-blue-600 underline">
-                email bedrijf
+              <a href="mailto:atelier.synaeve@gmail.com" className="text-blue-600 underline">
+                atelier.synaeve@gmail.com
               </a>{" "}
               als u gebruik wilt maken van deze rechten.
             </p>
@@ -75,8 +75,8 @@ export default function PrivacyPage() {
             <p className="mb-2">Als u vragen heeft over dit privacybeleid of hoe wij omgaan met uw gegevens, neem dan contact op via:</p>
             <p>
               E-mail:{" "}
-              <a href="mailto:info@laarchitecture.be" className="text-blue-600 underline">
-                email bedrijf
+              <a href="mailto:atelier.synaeve@gmail.com" className="text-blue-600 underline">
+                atelier.synaeve@gmail.com
               </a>
             </p>
           </section>

@@ -72,7 +72,7 @@ export default function CreativePage() {
   return (
     <div className="flex flex-col min-h-screen bg-[#E7EBEF] font-sans px-6 md:px-12 overflow-x-hidden">
       <main className="grow">
-        <PortfolioSection title={<h2 className="text-[#3B458B] text-4xl font-black uppercase tracking-wider drop-shadow-sm">Artistiek Werk</h2>} items={creativeProjects} />
+        <PortfolioSection title={<h2 className="text-[#3B458B] text-4xl font-black uppercase tracking-wider drop-shadow-sm">Artistiek</h2>} items={creativeProjects} />
       </main>
     </div>
   );
