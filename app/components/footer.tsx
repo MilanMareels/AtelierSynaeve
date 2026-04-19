@@ -11,9 +11,9 @@ export default function Footer() {
           Instagram
         </a>
         <div className="flex flex-col">
-          <p className="my-4 md:my-0 text-center">© 2026 Atelier Synaeve.</p>
+          <p className="my-4 md:my-0 text-center">&copy; {new Date().getFullYear()} Atelier Synaeve.</p>
           <a href="https://www.lannie.be" target="_blank" rel="noreferrer">
-            <p className="my-4 md:my-0 text-center">Ontworpen en ontwikkeld door Lannie</p>
+            <p className="my-4 md:my-0 text-center">Ontwikkeld door Lannie</p>
           </a>
         </div>
         <a href="/privacy" className="hover:underline">
@@ -29,9 +29,9 @@ export default function Footer() {
           Instagram
         </a>
         <div className="flex flex-col">
-          <p className="my-4 md:my-0 text-center">© 2026 Atelier Synaeve.</p>
+          <p className="my-4 md:my-0 text-center">&copy; {new Date().getFullYear()} Atelier Synaeve.</p>
           <a href="https://www.lannie.be" target="_blank" rel="noreferrer">
-            <p className="my-4 md:my-0 text-center">Ontworpen en ontwikkeld door Lannie</p>
+            <p className="my-4 md:my-0 text-center">Ontwikkeld door Lannie</p>
           </a>
         </div>
         <a href="/privacy" className="hover:underline">
@@ -47,7 +47,7 @@ export default function Footer() {
       <div className="flex flex-col">
         <p className="my-4 md:my-0 text-center">&copy; {new Date().getFullYear()} Atelier Synaeve.</p>
         <a href="https://www.lannie.be" target="_blank" rel="noreferrer">
-          <p className="my-4 md:my-0 text-center">Ontworpen en ontwikkeld door Lannie</p>
+          <p className="my-4 md:my-0 text-center">Ontwikkeld door Lannie</p>
         </a>
       </div>
       <a href="/privacy" className="hover:underline">

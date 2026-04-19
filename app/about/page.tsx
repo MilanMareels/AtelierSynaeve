@@ -6,14 +6,13 @@ const About = () => {
       <div className="w-full max-w-7xl">
         <div className="mb-16 lg:mb-20">
           <h1 className="text-4xl md:text-5xl font-light tracking-[0.25em] text-[#3B3B6D] uppercase mb-4">Over</h1>
-          <h2 className="text-xs md:text-sm font-light tracking-widest text-[#A0A0B0] uppercase">Michèle Synaeve</h2>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-start justify-center">
           <div className="w-full lg:w-1/2">
-            <div className="space-y-6 text-[#8B8B99] leading-relaxed font-light text-sm md:text-base">
+            <div className="space-y-6 text-[#3B3B6D] leading-relaxed font-light text-sm md:text-base">
               <p>
-                Ik ben <strong className="font-normal text-[#3B3B6D]">Michèle Synaeve</strong>, masterstudent Interieurarchitectuur aan KU Leuven (campus Gent).
+                Ik ben <strong className="text-[#DAA0BF]">Michèle Synaeve</strong>, masterstudent Interieurarchitectuur aan KU Leuven (campus Gent).
               </p>
 
               <p>
@@ -34,7 +33,7 @@ const About = () => {
                 <Image src="/About/profiel-foto.webp" alt="Portret van Michèle Synaeve" fill className="object-cover rounded-sm shadow-md" sizes="(max-width: 1024px) 100vw, 50vw" />
               </div>
 
-              <h2 className="text-xs md:text-sm font-light tracking-widest text-[#3B3B6D] uppercase mt-12 mb-4">Diensten</h2>
+              <h2 className="text-sm md:text-xl font-light tracking-widest text-[#3B3B6D] uppercase mt-12 mb-4">Diensten</h2>
 
               <p>
                 Voor maatwerk, een helder ontwerp en een betrokken ontwerpproces ben je hier aan het juiste adres. Heb je een vraag, een idee of een project dat nog vorm moet krijgen, neem dan gerust

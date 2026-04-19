@@ -84,7 +84,18 @@ export default function FurniturePage() {
   return (
     <div className="flex flex-col min-h-screen bg-[#E7EBEF] text-[#2D3142] font-sans px-6 md:px-12 overflow-x-hidden">
       <main className="grow">
-        <PortfolioSection title={<h2 className="text-[#0b407c] text-4xl font-black uppercase drop-shadow-md text-left md:text-left">Meubel</h2>} items={furnitureProjects} />
+        <PortfolioSection
+          title={
+            <div className="flex flex-col gap-4">
+              <h2 className="text-[#3B458B] text-4xl font-black uppercase drop-shadow-md text-left md:text-left">Meubel</h2>
+
+              <Link href="/" className="font-sans text-[#3B458B] text-xs md:text-sm font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity flex items-center gap-3 w-fit group">
+                <span className="group-hover:-translate-x-2 transition-transform duration-300 text-lg md:text-xl leading-none">&larr;</span> Home
+              </Link>
+            </div>
+          }
+          items={furnitureProjects}
+        />
       </main>
     </div>
   );

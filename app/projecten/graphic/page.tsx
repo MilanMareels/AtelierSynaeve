@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { ReactNode, useState } from "react";
 
 function ClickableImage({ src, altSrc, alt }: { src: string; altSrc: string; alt: string }) {
@@ -32,7 +33,17 @@ export default function GraphicPage() {
   return (
     <div className="flex flex-col min-h-screen bg-[#E7EBEF] font-sans px-6 md:px-12 overflow-x-hidden">
       <main className="grow">
-        <PortfolioSection title={<h2 className="text-[#3B458B] text-4xl font-black uppercase tracking-wider drop-shadow-md">Grafisch</h2>} items={graphicProjects} />
+        <PortfolioSection
+          title={
+            <div className="flex flex-col gap-4">
+              <h2 className="text-[#3B458B] text-4xl font-black uppercase tracking-wider drop-shadow-md">Grafisch</h2>
+              <Link href="/" className="text-[#3B458B] text-xs md:text-sm font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity flex items-center gap-3 w-fit group">
+                <span className="group-hover:-translate-x-2 transition-transform duration-300 text-lg md:text-xl leading-none">&larr;</span> Home
+              </Link>
+            </div>
+          }
+          items={graphicProjects}
+        />
       </main>
     </div>
   );
