@@ -53,7 +53,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex flex-col justify-center items-center py-20 px-6 md:px-12 bg-[#E7EBEF]">
+    <section id="contact" className="min-h-screen flex flex-col justify-center items-center py-20 px-6 md:px-12 md:pt-48 bg-[#E7EBEF]">
       <div className="w-full max-w-6xl flex flex-col mt-20 md:mt-0">
         <div className="text-center mb-16 lg:mb-24">
           <h2 className="text-3xl md:text-5xl uppercase tracking-[0.15em] text-[#3B458B] mb-4 syncopate drop-shadow-sm text-left">Contact</h2>
@@ -88,10 +88,10 @@ export default function Contact() {
               </a>
             </div>
 
-            <div>
+            {/*<div>
               <p className="text-[#3B458B] mb-1">BTW Nummer</p>
               <p className="text-gray-400">BE 1034.095.224</p>
-            </div>
+            </div>*/}
           </div>
 
           <form onSubmit={onSubmit} className="w-full space-y-10">

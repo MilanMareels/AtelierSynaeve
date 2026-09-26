@@ -34,9 +34,9 @@ function ClickableProject({ src, altSrc, alt }: { src: string; altSrc: string; a
 export default function GraphicPage() {
   const graphicItems = [
     { src: "/Graphic/Graphic-Propellor.webp", altSrc: "/Graphic/Graphic-Propellor-2.webp", alt: "Graphic Propellor" },
+    { src: "/Graphic/Graphic-Lannie.webp", altSrc: "/Graphic/Graphic-Lannie-2.webp", alt: "Graphic Lannie" },
     { src: "/Graphic/Graphic-Rhino-1.webp", altSrc: "/Graphic/Graphic-Rhino-3.webp", alt: "Graphic Rhino" },
     { src: "/Graphic/Graphic-Rhino-2.webp", altSrc: "/Graphic/Graphic-Rhino-4.webp", alt: "Graphic Rhino 2" },
-    { src: "/Graphic/Graphic-Lannie.webp", altSrc: "/Graphic/Graphic-Lannie.webp", alt: "Graphic Lannie" },
   ];
 
   const graphicProjects = graphicItems.map((item, i) => {

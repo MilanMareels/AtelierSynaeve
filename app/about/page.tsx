@@ -12,7 +12,8 @@ const About = () => {
           <div className="w-full lg:w-1/2">
             <div className="space-y-6 text-[#3B3B6D] leading-relaxed font-light text-sm md:text-base">
               <p>
-                Ik ben <strong className="text-[#DAA0BF]">Michèle Synaeve</strong>, masterstudent Interieurarchitectuur aan KU Leuven (campus Gent).
+                Ik ben <strong className="text-[#DAA0BF]">Michèle Synaeve</strong>, interieurarchitect en ontwerper, met een bijzondere interesse in materialen, ambacht en het vertalen van ideeën naar
+                iets tastbaars.
               </p>
 
               <p>
@@ -33,12 +34,14 @@ const About = () => {
                 <Image src="/About/profiel-foto.webp" alt="Portret van Michèle Synaeve" fill className="object-cover rounded-sm shadow-md" sizes="(max-width: 1024px) 100vw, 50vw" />
               </div>
 
-              <h2 className="text-sm md:text-xl font-light tracking-widest text-[#3B3B6D] uppercase mt-12 mb-4">Diensten</h2>
+              {/*
+                <h2 className="text-sm md:text-xl font-light tracking-widest text-[#3B3B6D] uppercase mt-12 mb-4">Diensten</h2>
 
               <p>
                 Voor maatwerk, een helder ontwerp en een betrokken ontwerpproces ben je hier aan het juiste adres. Heb je een vraag, een idee of een project dat nog vorm moet krijgen, neem dan gerust
                 contact op.
               </p>
+              */}
             </div>
           </div>
 

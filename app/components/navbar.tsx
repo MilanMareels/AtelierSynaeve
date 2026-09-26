@@ -13,6 +13,7 @@ const navLinks = [
       { name: "MEUBEL", href: "/projecten/furniture" },
       { name: "ARTISTIEK", href: "/projecten/creative" },
       { name: "GRAFISCH", href: "/projecten/graphic" },
+      { name: "MASTERPROEF", href: "/projecten/master-thesis" },
     ],
   },
   { name: "OVER", href: "/about" },
