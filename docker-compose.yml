@@ -10,9 +10,9 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - NODE_OPTIONS=--max-old-space-size=1800
+      - NODE_OPTIONS=--max-old-space-size=512
     deploy:
       resources:
         limits:
-          cpus: "4.0"
-          memory: 2G
+          cpus: "1.0"
+          memory: 1G

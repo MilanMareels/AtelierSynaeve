@@ -9,6 +9,7 @@ export default function Home() {
           src="/Logo/logo.webp"
           alt="Atelier Synaeve Aquarel Achtergrond"
           fill
+          sizes="100vw"
           className="object-cover scale-150 md:scale-200 transform transition-transform duration-500"
           priority
         />

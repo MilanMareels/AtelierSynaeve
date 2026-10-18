@@ -9,7 +9,7 @@ export default async function MasterPage() {
         <section className="relative h-screen w-full overflow-hidden">
           <BackButton />
 
-          <Image src={"/Master-thesis/Master-thesis-Hero.webp"} alt={`Masterproef hero`} fill className="object-cover" priority />
+          <Image src={"/Master-thesis/Master-thesis-Hero.webp"} alt={`Masterproef hero`} fill sizes="100vw" className="object-cover" priority />
 
           <div className="absolute inset-0 bg-white/30 z-10 pointer-events-none" />
 
@@ -51,7 +51,7 @@ export default async function MasterPage() {
                   Lees de volledige masterproef <span className="group-hover:translate-x-2 transition-transform duration-300 text-lg md:text-xl leading-none">&rarr;</span>
                 </Link>
               </div>
-              <img src="/Master-thesis/master-thesis-1.webp" alt="" />
+              <Image src="/Master-thesis/master-thesis-1.webp" alt="Masterproef afbeelding 1" width={2357} height={3420} sizes="(max-width: 768px) 100vw, 900px" className="w-full h-auto" />
               <h2 className="mt-4 mb-4 font-bold">The Grammar of Wear</h2>
               <p>
                 Krassen, verkleuringen, materiaaloverdracht of loskomende lagen lijken misschien willekeurig. Maar als je beter kijkt, vertellen ze iets. Over hoe iets wordt aangeraakt, hoe het wordt
@@ -76,7 +76,7 @@ export default async function MasterPage() {
                   Bekijk de volledige tekeningenbundel <span className="group-hover:translate-x-2 transition-transform duration-300 text-lg md:text-xl leading-none">&rarr;</span>
                 </Link>
               </div>
-              <img src="/Master-thesis/master-thesis-2.webp" alt="" />
+              <Image src="/Master-thesis/master-thesis-2.webp" alt="Masterproef afbeelding 2" width={3500} height={2473} sizes="(max-width: 768px) 100vw, 900px" className="w-full h-auto" />
               <h2 className="mt-4 mb-4 font-bold">Van ornament naar interieur</h2>
               <p>
                 Vanuit de verschillende slijtagesporen ontstond langzaam een hele verzameling patronen en ornamenten. Maar ik wilde ze niet alleen op papier laten bestaan. Ik wilde zien wat er zou
@@ -91,7 +91,7 @@ export default async function MasterPage() {
                 In het diorama bracht ik al die toepassingen samen. Het interieur is bewust uitbundig. Patronen lopen in elkaar over, kleuren ontmoeten elkaar en ornament duikt op waar het maar kan.
                 Niet om te tonen hoe een interieur eruit moet zien, maar om te ontdekken hoe ver deze nieuwe ornamenttaal kan groeien.
               </p>
-              <img src="/Master-thesis/master-thesis-7.webp" alt="" />
+              <Image src="/Master-thesis/master-thesis-7.webp" alt="Masterproef afbeelding 7" width={2092} height={3389} sizes="(max-width: 768px) 100vw, 900px" className="w-full h-auto" />
               <p>Zo eindigt het verhaal waar het begon: bij de sporen die we meestal liever niet zien. Alleen worden ze hier niet langer gelezen als het einde van een materiaal.</p>
               <p>Ze worden het begin van iets nieuws. Slijtage wordt ornament.</p>
             </div>

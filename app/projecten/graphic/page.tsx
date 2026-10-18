@@ -1,35 +1,6 @@
-"use client";
-
-import Image from "next/image";
 import Link from "next/link";
-import { ReactNode, useState } from "react";
-
-// Deze component gedraagt zich nu qua lay-out exact als de projecten op de Furniture pagina
-function ClickableProject({ src, altSrc, alt }: { src: string; altSrc: string; alt: string }) {
-  const [isClicked, setIsClicked] = useState(false);
-
-  const toggleImage = () => setIsClicked(!isClicked);
-
-  return (
-    <div className="w-full flex flex-col mb-16 md:mb-24">
-      {/* Exact dezelfde styling en positie (rechtsboven) als de Furniture page */}
-      {/* Altijd zichtbaar, geen hover nodig om het te laten verschijnen */}
-      <div className="w-full flex justify-end mb-8 md:mb-12 px-4 md:px-12 relative z-40">
-        <div onClick={toggleImage} className="text-[#3B458B] text-xs md:text-sm font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity flex items-center gap-3 group cursor-pointer">
-          {isClicked ? "Origineel" : "Bekijk project"}
-          <span className="group-hover:translate-x-2 transition-transform duration-300 text-lg md:text-xl leading-none">&rarr;</span>
-        </div>
-      </div>
-
-      {/* De foto zelf */}
-      <div className="flex justify-center w-full">
-        <div onClick={toggleImage} className="relative w-[90%] md:w-[70%] h-62.5 md:h-175 block hover:scale-105 transition-transform duration-500 cursor-pointer">
-          <Image src={isClicked ? altSrc : src} alt={alt} fill className="object-contain" loading="lazy" />
-        </div>
-      </div>
-    </div>
-  );
-}
+import { ReactNode } from "react";
+import ClickableProject from "./clickableProject";
 
 export default function GraphicPage() {
   const graphicItems = [

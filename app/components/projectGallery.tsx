@@ -53,7 +53,7 @@ export default function ProjectGallery({ images, title }: ProjectGalleryProps) {
         <div className="max-w-400 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:gap-12 md:p-12">
           {images.map((img, index) => (
             <div key={index} className="relative w-full h-[50vh] md:h-[90vh] overflow-hidden cursor-pointer group" onClick={() => setSelectedIndex(index)}>
-              <Image src={img} alt={`${title} galerij ${index + 1}`} fill className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" loading="lazy" />
+              <Image src={img} alt={`${title} galerij ${index + 1}`} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" loading="lazy" />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 z-10" />
             </div>
           ))}
@@ -88,7 +88,7 @@ export default function ProjectGallery({ images, title }: ProjectGalleryProps) {
           )}
 
           <div className="relative w-full h-[85vh] md:h-full max-w-7xl flex justify-center items-center" onClick={(e) => e.stopPropagation()}>
-            <Image src={images[selectedIndex]} alt={`${title} vergroot`} fill className="object-contain" priority />
+            <Image src={images[selectedIndex]} alt={`${title} vergroot`} fill sizes="100vw" className="object-contain" priority />
           </div>
 
           {images.length > 1 && (

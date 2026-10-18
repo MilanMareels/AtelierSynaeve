@@ -36,7 +36,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
         <section className="relative h-screen w-full overflow-hidden">
           <BackButton />
 
-          <Image src={heroImage} alt={`${project.title} hero`} fill className="object-cover" priority />
+          <Image src={heroImage} alt={`${project.title} hero`} fill sizes="100vw" className="object-cover" priority />
 
           <div className="absolute inset-0 bg-white/30 z-10 pointer-events-none" />
 

@@ -12,14 +12,14 @@ export default function FurniturePage() {
       </div>
       <div className="flex flex-col items-center gap-2 md:gap-12 w-full">
         <Link href="/projecten/details/tessera" className="relative w-[95%] md:w-[85%] h-37.5 md:h-87.5 block hover:scale-105 transition-transform duration-500">
-          <Image src="/Tessera/Tessera-1.webp" alt="Tessera" fill className="object-contain" loading="lazy" />
+          <Image src="/Tessera/Tessera-1.webp" alt="Tessera" fill sizes="(max-width: 768px) 95vw, 85vw" className="object-contain" loading="lazy" />
         </Link>
         <div className="flex w-full justify-between items-center px-4 md:px-12 h-30 md:h-87.5">
           <Link href="/projecten/details/tessera" className="relative w-[45%] md:w-[55%] h-[60%] md:h-[80%] block hover:scale-105 transition-transform duration-500">
-            <Image src="/Tessera/Tessera-2.webp" alt="Tessera 4" fill className="object-contain" loading="lazy" />
+            <Image src="/Tessera/Tessera-2.webp" alt="Tessera 4" fill sizes="(max-width: 768px) 45vw, 55vw" className="object-contain" loading="lazy" />
           </Link>
           <Link href="/projecten/details/tessera" className="relative w-[45%] md:w-[55%] h-full block hover:scale-105 transition-transform duration-500 md:top-30">
-            <Image src="/Tessera/Tessera-3.webp" alt="Tessera 2" fill className="object-contain" loading="lazy" />
+            <Image src="/Tessera/Tessera-3.webp" alt="Tessera 2" fill sizes="(max-width: 768px) 45vw, 55vw" className="object-contain" loading="lazy" />
           </Link>
         </div>
       </div>
@@ -39,19 +39,19 @@ export default function FurniturePage() {
           href="/projecten/details/textile-usion"
           className="absolute top-[0%] md:top-[-10%] left-[5%] md:left-[15%] w-[40%] md:w-[35%] h-25 md:h-62.5 block hover:scale-105 transition-transform duration-500 z-10"
         >
-          <Image src="/Textile-usion/Textile-usion-3.webp" alt="Textile usion 3" fill className="object-contain" loading="lazy" />
+          <Image src="/Textile-usion/Textile-usion-3.webp" alt="Textile usion 3" fill sizes="(max-width: 768px) 40vw, 35vw" className="object-contain" loading="lazy" />
         </Link>
         <Link
           href="/projecten/details/textile-usion"
           className="absolute top-[15%] right-[0%] md:right-[5%] w-[55%] md:w-[45%] h-45 md:h-112.5 block hover:scale-105 transition-transform duration-500 z-20"
         >
-          <Image src="/Textile-usion/Textile-usion-2.webp" alt="Textile usion 2" fill className="object-contain" loading="lazy" />
+          <Image src="/Textile-usion/Textile-usion-2.webp" alt="Textile usion 2" fill sizes="(max-width: 768px) 55vw, 45vw" className="object-contain" loading="lazy" />
         </Link>
         <Link
           href="/projecten/details/textile-usion"
           className="absolute bottom-[-5%] left-[10%] md:left-[15%] w-[37%] md:w-[35%] h-37.5 md:h-137.5 block hover:scale-105 transition-transform duration-500 z-30"
         >
-          <Image src="/Textile-usion/Textile-usion-1.webp" alt="Textile usion" fill className="object-contain" loading="lazy" />
+          <Image src="/Textile-usion/Textile-usion-1.webp" alt="Textile usion" fill sizes="(max-width: 768px) 37vw, 35vw" className="object-contain" loading="lazy" />
         </Link>
       </div>
     </div>,
@@ -64,10 +64,10 @@ export default function FurniturePage() {
       </div>
       <div className="flex w-full justify-between items-end h-30 md:h-87.5 px-4 md:px-20 mt-4 md:mt-10">
         <Link href="/projecten/details/vinicunca" className="relative w-[65%] md:w-[65%] h-full block hover:scale-105 transition-transform duration-500">
-          <Image src="/Organisch-hout/Organisch-hout-1.webp" alt="Organisch hout" fill className="object-contain" loading="lazy" />
+          <Image src="/Organisch-hout/Organisch-hout-1.webp" alt="Organisch hout" fill sizes="(max-width: 768px) 65vw, 65vw" className="object-contain" loading="lazy" />
         </Link>
         <Link href="/projecten/details/vinicunca" className="relative md:ml-20 w-[55%] md:w-[55%] h-[80%] md:h-[90%] block hover:scale-105 transition-transform duration-500 mb-4 rotate-90">
-          <Image src="/Organisch-hout/Organisch-hout-2.webp" alt="Organisch hout 2" fill className="object-contain" loading="lazy" />
+          <Image src="/Organisch-hout/Organisch-hout-2.webp" alt="Organisch hout 2" fill sizes="(max-width: 768px) 55vw, 55vw" className="object-contain" loading="lazy" />
         </Link>
       </div>
     </div>,
@@ -75,7 +75,7 @@ export default function FurniturePage() {
     <div key="4" className="w-full flex flex-col mb-16 md:mb-24">
       <div className="w-full flex justify-center mt-8 md:mt-20">
         <Link href="/projecten/details/vinicunca" className="relative w-screen max-w-300 h-55 md:h-200 block hover:scale-105 transition-transform duration-500">
-          <Image src="/Organisch-hout/Organisch-hout-3.webp" alt="Organisch hout 3" fill className="object-contain md:object-cover" loading="lazy" />
+          <Image src="/Organisch-hout/Organisch-hout-3.webp" alt="Organisch hout 3" fill sizes="(max-width: 768px) 100vw, 1200px" className="object-contain md:object-cover" loading="lazy" />
         </Link>
       </div>
     </div>,
